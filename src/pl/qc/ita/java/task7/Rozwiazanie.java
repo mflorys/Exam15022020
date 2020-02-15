@@ -14,14 +14,14 @@ public class Rozwiazanie {
     public static void main(String[] args) {
         HashSet<Integer> set = new HashSet<>();
         Random random = new Random();
-        for(int i=0;i<20;i++){
-            set.add(random.nextInt(20)+1);
+        for (int i = 0; i < 20; i++) {
+            set.add(random.nextInt(20) + 1);
         }
 
         Iterator<Integer> iterator = set.iterator();
-        while(iterator.hasNext()){
+        while (iterator.hasNext()) {
             int num = iterator.next();
-            if(num>10) iterator.remove();
+            if (num > 10) iterator.remove();
         }
 
         System.out.println(set);
