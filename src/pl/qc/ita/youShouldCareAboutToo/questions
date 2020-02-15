@@ -4,7 +4,19 @@ Odpowiedzi na pytanie udziel bezpośrednio pod każdym pytaniem.
 
 1. Wymień najistotniejsze zastosowania Infrastruktury Klucza Publicznego (PKI).
 
+Potwierdzanie tożsamości
+Weryfikacja certyfikatów
+Podpisywanie przekazu
+Szyfrowanie przekaz
+Weryfikacja tożsamości subskrybentów
+Wymiana kluczy kryptograficznych
+Wystawianie certyfikatów
+Znakowanie czasem
+
+
 2. W jaki sposób przechowywane są hasła w bezpiecznym systemie informatycznym?
+
+zaszyfrowane
 
 3. Czym jest podpis elektroniczny?
 
@@ -13,8 +25,10 @@ Odpowiedzi na pytanie udziel bezpośrednio pod każdym pytaniem.
 5. Wymień 3 cechy funkcji skrótu.
 
 6. Na czym polega atak typu SQL Injection?
+na wprowadzeniu komendy SQL żeby zobaczyć bazy znajdujące się "pod spodem"
 
 7. Na czym polega atak typu XSS?
+ Cross site scripting - czyli jeżeli użytkownik może przesyłać niewalidowane treści np  html i wpowadza w ten sposób obcy kod
 
 
 
@@ -34,36 +48,59 @@ SELECT * FROM orders;
 
 8. Napisz zapytanie, które wyświetli listę krajów, z których pochodzą użytkownicy, bez powtórzeń.
 
+SELECT DISTINCT Country FROM users
+
 9. Napisz zapytanie, które wyświetli użytkowników z krajów zaczynających się na literę "P" oraz z literą "r" na trzeciej pozycji.
+
+SELECT id FROM users WHERE country LIKE P__r%
 
 10. Napisz zapytanie, które wyświetli zamówienia złożone do końca 2019r. przez obywateli Niemiec oraz posortuj wyniki malejąco po liczbie sztuk.
 
+SELECT orders.*
+FROM Orders
+RIGHT JOIN Customers
+ON orders.user_id=customers.id
+WHERE order_date <= 2019
+ORDER BY orders.quantity
+
 11. Wyświetl liczbę użytkowników z poszczególnych krajów o ile występuje więcej niż 10.
 
+SELECT COUNT(id), country
+FROM customers
+GROUP BY country
+HAVING COUNT(id) > 10;
+
 12. Wyświetl imiona i nazwiska zamawiających oraz ich zamówienia. Uwzględnij wszystkich użytkowników, nawet tych bez zamówień.
+SELECT customers.firstname, customers.firstname, orders.order_date, orders.order_quantity
+FROM customers
+FULL OUTER JOIN orders ON Customers.id=Orders.user_id
 
 13. Wyświetl imiona i nazwiska zamawiających oraz ich zamówienia. Jeśli użytkownik nie złożył zamówienia, nie wyświetlaj go. Jeśli zamówienie nie ma przypisanego użytkownika, również go nie wyświetlaj.
 
+SELECT customers.firstname, customers.firstname, orders.order_date, orders.order_quantity
+FROM customers
+FULL OUTER JOIN orders ON Customers.id=Orders.user_id
+WHERE orders is not null
 
 
 ----- Linux -----
 
 14. Podaj następujące komendy:
 a) wyświetlenie wszystkich plików w folderze, łącznie z ukrytymi
-
+is -all
 b) skopiuj zawartość file1 do file2 w folderze nadrzędnym
-
+cp file1 file2
 c) zmień nazwę file1 na file2
-
+mv file1 file2
 d) wyświetl wszystkie linijki z pliku zawierające wyraz "error"
-
+grep error file
 e) wyświetl wszystkie procesy
-
+ps aux
 f) zabij proces o PID = 123
-
+kill 123
 g) nadaj pełne uprawnienia do pliku file1 dla wszystkich
-
+chmod file1 world
 h) zaloguj się protokołem SSH na serwer 192.0.0.1 na użytkownika admin
-
+ssh admin@192.0.0.1
 15. Jak wyjść z edytora tekstu VI?
-
+wq
