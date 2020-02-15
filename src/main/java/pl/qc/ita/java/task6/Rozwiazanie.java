@@ -11,16 +11,11 @@ public class Rozwiazanie {
     public static void main(String[] args) {
         HashMap<String, String> map = stworzMape();
 
-        Collection<String> names = map.values();
+        // I have no idea how to do this
+        usunElementMapyPoValue(map, "Jan");
 
-//        usunElementMapyPoValue(map, "Jan");
-//
-//        for (Map.Entry<String, String> pair : map.entrySet()) {
-//            System.out.println(pair.getKey() + " " + pair.getValue());
-//        }
-        for (String s: names
-             ) {
-            System.out.println(s);
+        for (Map.Entry<String, String> pair : map.entrySet()) {
+            System.out.println(pair.getKey() + " " + pair.getValue());
         }
     }
 
