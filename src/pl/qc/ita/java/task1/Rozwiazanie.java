@@ -13,6 +13,7 @@ W metodzie main utwórz małżeństwo używając w tym celu 2 linii kodu.
 
 public class Rozwiazanie {
     public static void main(String[] args) {
-        //Twój kod
+        Kobieta zona = new Kobieta(30,170);
+        Mezczyzna maz = new Mezczyzna(30,180,zona);
     }
 }
