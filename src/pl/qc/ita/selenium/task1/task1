@@ -1,1 +1,4 @@
 Czym sie różnią i jak wygląda imlementacja explicit i implicit wait?
+
+implicid wait ustawia w kodzie konkretny, maksymalny czas oczekiwania przed każdym następnym zadaniem, dla całego kodu, ustawia się na samym początku.
+explicid wait ustawia się tylko dla konkretnej instancji.

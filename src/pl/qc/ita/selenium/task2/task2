@@ -1,1 +1,7 @@
 Page Factory i Page Object Pattern - czym są, do czego się je stosuje?
+
+Page object factory tworzy na podstawie page object pattern "odpowiednik" strony na którym przeprowadzamy test, zapisując
+zestaw obiektów i ich cech których potem używamy do testów.
+
+Przykładowo, page object pattern strony logowania przechowuje informacje na temat pola imput login i imput password,
+buttonów itd.
