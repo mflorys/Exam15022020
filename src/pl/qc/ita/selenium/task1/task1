@@ -1,1 +1,5 @@
 Czym sie różnią i jak wygląda imlementacja explicit i implicit wait?
+implicit wait - jest definiowany raz, wywoływany przy każdej próbie wyszukania elementu. Wydłuża testy, ponieważ dla każdego elementu czas oczekiwania
+jest taki sam
+exlicit wait - dla każdego elementu można ustawić różne czasy oczekiwania, należy zastosować metodę until, w której podajemy earunek jaki musi być spełniony.
+Szybsze testy.

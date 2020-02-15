@@ -1,1 +1,5 @@
 Page Factory i Page Object Pattern - czym są, do czego się je stosuje?
+POP - odwzorowanie strony lub fragmentu strony w osobną klasę. Page Object zawiera wszystkie selektory do elementów danego fragmentu aplikacji
+i metody które pozwalają na nim operować.
+PF - jest to rozszerzona implementacja POP, która pozwala na łatwiejszy dostęp do web elementów na stronach. Jeżeli potrzebujemy wykorzystać z elementu,
+nie ma potrzeby ponownie go wyszukiwać na stronie, wystarczy się do niego odwołać.
