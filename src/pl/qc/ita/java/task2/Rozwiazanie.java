@@ -1,7 +1,8 @@
 package pl.qc.ita.java.task2;
 
 /*
-Popraw konstruktor klasy Kolo z dwoma parametrami tak, aby po jego wywołaniu tworzone było koło o promieniu 15. Wykorzystaj w tym celu jedną linijkę kodu.
+Popraw konstruktor klasy Kolo z dwoma parametrami tak,
+aby po jego wywołaniu tworzone było koło o promieniu 15. Wykorzystaj w tym celu jedną linijkę kodu.
 
 Hint: wywołaj w konstruktorze istniejący konstruktor.
  */
