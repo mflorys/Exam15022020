@@ -12,6 +12,6 @@ class Kolo {
     }
 
     public Kolo(double x, double y) {
-        //Twój kod
+        new Kolo(this.x = x, this.y = y, this.promien = 15);
     }
 }
