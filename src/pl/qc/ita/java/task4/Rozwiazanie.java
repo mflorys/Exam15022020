@@ -3,8 +3,10 @@ package pl.qc.ita.java.task4;
 /*
 Posiadasz klasy Kaczka, Pingwin i Slimak, które powinny dziedziczyć po klasie IstotaZywa.
 1. Zaimplementuj dla każdej z trzech klas reprezentujących zwierzęta wszytskie niezbędne interfejsy.
-2. W każdej z klas nadpisz metodę wydajDzwiek(), żeby zwierzęta wydawały stosowne dźwięki (przyjmij, że pingwin robi "łiii", a ślimak "aaaaajee").
-3. Dla każdej klasy dziedziczącej dodaj jeden atrybut i stwórz konsruktor wywołujący konstruktor klasy nadrzędnej oraz przypisujący wartość dodanemu atrybutowi.
+2. W każdej z klas nadpisz metodę wydajDzwiek(), żeby zwierzęta wydawały stosowne dźwięki (przyjmij, że pingwin robi
+"łiii", a ślimak "aaaaajee").
+3. Dla każdej klasy dziedziczącej dodaj jeden atrybut i stwórz konsruktor wywołujący konstruktor klasy nadrzędnej oraz
+przypisujący wartość dodanemu atrybutowi.
 Program musi się kompilować.
 Klasy nie mogą być abstrakcyjne.
 

@@ -8,4 +8,7 @@ public class Kaczka extends IstotaZywa {
         super(imie, waga);
         this.liczbaSkrzydel = liczbaSkrzydel;
     }
+    public void wydajDzwiek(){
+        System.out.println("KwaKwa");
+    }
 }
