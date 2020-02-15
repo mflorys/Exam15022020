@@ -18,6 +18,11 @@ IstotaZywa istotaZywa = new Kaczka();
 
 public class Rozwiazanie {
     public static void main(String[] args) {
-        //Twój kod
+        Kaczka kaczka = new Kaczka("Donald", 30, 2);
+        Pingwin pingwin = new Pingwin("Jan", 60, 10);
+        Slimak slimak = new Slimak("Maniek", 1, 1);
+        kaczka.wydajDzwiek();
+        pingwin.wydajDzwiek();
+        slimak.wydajDzwiek();
     }
 }
