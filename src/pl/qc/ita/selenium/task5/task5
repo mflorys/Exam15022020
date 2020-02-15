@@ -1,0 +1,5 @@
+Mamy klasę UsersGenerator, ktora zawiera metody createAUser(String name) i withAge(int age).
+
+Zaproponuj jak musi wygladac implementacja powyższych metod, żeby mozna bylo wywołać poniższy kod:
+
+createAUser(„Ryszard”).withAge(22);

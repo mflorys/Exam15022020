@@ -1,0 +1,5 @@
+Wejdź na stronę go-sport.pl
+a) sprawdź, że wartość koszyka to 0zł
+b) dodaj do koszyka dowolny produkt
+c) sprawdź, ze koszyk zawiera jeden produkt oraz wartość > 0zł
+d) otwórz koszyk > usuń produkt i sprawdź, że wartość koszyka to 0zł
