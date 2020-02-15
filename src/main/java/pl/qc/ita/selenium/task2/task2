@@ -1,0 +1,6 @@
+Page Factory i Page Object Pattern - czym są, do czego się je stosuje?
+
+page factory - oznaczamy elementy w klasie z adnotacja @FindBy z informacja jak je znaleźć (xpath, id etc) elementy inicjalizuje sie
+uzywajac statycznej motody , chyba initElements :)
+
+page object pattern - wzorzec pomaga odizolowac strony od konkretnych testów.

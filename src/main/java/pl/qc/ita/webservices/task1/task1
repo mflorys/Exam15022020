@@ -1,0 +1,33 @@
+1) Wybierz 5 adresów URL z zadania selenium.task3
+2) Użyj biblioteki restassured by otworzyć każdy adres i sprwadź, czy nie jest zwracany kod odpowiedzi "404"
+
+
+
+
+public class getUrls {
+
+  private String URL = "http://localhost:3000/posts";
+
+   private String URL = https://cdnjs.cloudflare.com
+   private String URL2 = https://kansas.gpcdn.pl/header/0.1.0.238/main.css
+   private String URL3 = https://kansas.gpcdn.pl/core/0.1.0.670/0d28a038912081f8a6e7.client.js
+   private String URL4 = https://storage.googleapis.com/pracuj/0.2.15/tracker.js
+   private String URL5 = https://www.googleadservices.com/pagead/conversion_async.js
+
+  @Test
+  public void statusCodeShouldReturn200WhenGettingAllPosts() {
+
+       when().get(URL).then().statusCode(200);
+
+       when().get(URL2).then().statusCode(200);
+
+       when().get(URL3).then().statusCode(200);
+
+       when().get(URL4).then().statusCode(200);
+
+       when().get(URL5).then().statusCode(200);
+
+
+
+
+  }

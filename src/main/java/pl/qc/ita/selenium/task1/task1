@@ -1,0 +1,9 @@
+Czym sie różnią i jak wygląda imlementacja explicit i implicit wait?
+
+
+implicit , jedna linijka kodu - umieszczamy na górze klasy. Ma odniesienie do wszystkich elementów w klasie.
+ Driver czeka okreslona liczbe sekund zanim rzuci "no such element exception"
+
+ explictit - driver czeka aż wydarzy sie okreslony warunek lub uplynie
+ okreslony czas zanim rzuci wyjątek. ustawiamy w konkretnym miejscu w kodzie
+
