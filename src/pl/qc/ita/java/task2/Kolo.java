@@ -13,5 +13,6 @@ class Kolo {
 
     public Kolo(double x, double y) {
         //Twój kod
+        this(x,y,15);
     }
 }

@@ -13,6 +13,9 @@ W metodzie main utwórz małżeństwo używając w tym celu 2 linii kodu.
 
 public class Rozwiazanie {
     public static void main(String[] args) {
-        //Twój kod
+
+Kobieta Frania = new Kobieta();
+Mężczyzna Franek = new Mężczyzna(20,170,Frania);
+
     }
 }
