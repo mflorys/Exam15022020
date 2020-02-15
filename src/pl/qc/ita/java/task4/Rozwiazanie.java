@@ -18,6 +18,16 @@ IstotaZywa istotaZywa = new Kaczka();
 
 public class Rozwiazanie {
     public static void main(String[] args) {
-        //Twój kod
+
+        Kaczka kaczka = new Kaczka("Pawel", 11, 2);
+        Pingwin pingwin = new Pingwin("Maciej", 120, 2);
+        Slimak slimak = new Slimak("Andżela", 340, true);
+
+        kaczka.wydajDzwiek();
+        pingwin.wydajDzwiek();
+        slimak.wydajDzwiek();
+
+        System.out.println("polimorfizm");
+
     }
 }

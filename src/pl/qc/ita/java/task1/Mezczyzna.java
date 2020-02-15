@@ -16,4 +16,8 @@ public class Mezczyzna {
     this.wzrost = wzrost;
     this.zona = zona;
   }
+
+  public void setZona(Kobieta zona) {
+    this.zona = zona;
+  }
 }

@@ -12,8 +12,7 @@ class Kolo {
     }
 
     public Kolo(double x, double y) {
-        this.x = x;
-        this.y = y;
+     this(x,y,15);
 
     }
 }
