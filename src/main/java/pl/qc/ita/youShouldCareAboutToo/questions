@@ -5,17 +5,17 @@ Odpowiedzi na pytanie udziel bezpośrednio pod każdym pytaniem.
 1. Wymień najistotniejsze zastosowania Infrastruktury Klucza Publicznego (PKI).
 
 2. W jaki sposób przechowywane są hasła w bezpiecznym systemie informatycznym?
-
+Są hashowane.
 3. Czym jest podpis elektroniczny?
-
+Cyfrowe potwierdzenie tożsamości
 4. Jak nazywa się lista Centrów Autoryzacji potwierdzających dany certyfikat?
 
 5. Wymień 3 cechy funkcji skrótu.
 
 6. Na czym polega atak typu SQL Injection?
-
+Wstrzyknięcie do aplikacji nieautoryzowanego fragmentu zapytania SQL po stronie serwera.
 7. Na czym polega atak typu XSS?
-
+Polega na wstrzyknięciu fragmentu kodu JS lub innego języka skryptowego, który może zostać uruchomiony w przeglądarce.
 
 
 ----- Bazy danych -----
@@ -33,16 +33,24 @@ SELECT * FROM orders;
 -----------------------------------
 
 8. Napisz zapytanie, które wyświetli listę krajów, z których pochodzą użytkownicy, bez powtórzeń.
-
+SELECT DISTINCT COUNTRY FROM USERS;
 9. Napisz zapytanie, które wyświetli użytkowników z krajów zaczynających się na literę "P" oraz z literą "r" na trzeciej pozycji.
-
+SELECT * FROM USERS WHERE COUNTRY LIKE "P_r%"
 10. Napisz zapytanie, które wyświetli zamówienia złożone do końca 2019r. przez obywateli Niemiec oraz posortuj wyniki malejąco po liczbie sztuk.
-
+SELECT O.* FROM ORDERS O
+INNER JOIN USERS U ON O.USER_ID=U.ID
+WHERE U.COUNTRY="Niemcy" AND O.ORDER_DATE<"01012020"
+ORDER BY QUANTITY DESC
 11. Wyświetl liczbę użytkowników z poszczególnych krajów o ile występuje więcej niż 10.
-
+SELECT COUNT(ID) AS NUMBER_OF_USERS, COUNTRY FROM USERS
+GROUP BY COUNTRY
+HAVING COUNT(ID) > 10
 12. Wyświetl imiona i nazwiska zamawiających oraz ich zamówienia. Uwzględnij wszystkich użytkowników, nawet tych bez zamówień.
-
+SELECT U.FIRSTNAME, U.LASTNAME, O.* FROM USERS
+LEFT JOIN ORDERS O ON U.ID=O.USERS_ID
 13. Wyświetl imiona i nazwiska zamawiających oraz ich zamówienia. Jeśli użytkownik nie złożył zamówienia, nie wyświetlaj go. Jeśli zamówienie nie ma przypisanego użytkownika, również go nie wyświetlaj.
+SELECT U.FIRSTNAME, U.LASTNAME, O.* FROM USERS
+INNER JOIN ORDERS O ON U.ID=O.USERS_ID
 
 
 
@@ -50,20 +58,20 @@ SELECT * FROM orders;
 
 14. Podaj następujące komendy:
 a) wyświetlenie wszystkich plików w folderze, łącznie z ukrytymi
-
+ls -al
 b) skopiuj zawartość file1 do file2 w folderze nadrzędnym
-
+cp file1 file2
 c) zmień nazwę file1 na file2
-
+mv file1 filw2
 d) wyświetl wszystkie linijki z pliku zawierające wyraz "error"
 
 e) wyświetl wszystkie procesy
-
+ps aux
 f) zabij proces o PID = 123
-
+kill -123 proc_id
 g) nadaj pełne uprawnienia do pliku file1 dla wszystkich
-
+chmod 777 file1
 h) zaloguj się protokołem SSH na serwer 192.0.0.1 na użytkownika admin
-
+ssh admin@192.0.0.1
 15. Jak wyjść z edytora tekstu VI?
 
