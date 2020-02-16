@@ -3,3 +3,13 @@ Mamy klasę UsersGenerator, ktora zawiera metody createAUser(String name) i with
 Zaproponuj jak musi wygladac implementacja powyższych metod, żeby mozna bylo wywołać poniższy kod:
 
 createAUser(„Ryszard”).withAge(22);
+
+UsersGenerator createAUser(String imie){
+addUser(imie);
+return new UsersGenerator(driver);
+}
+
+UsersGenerator withAge(int age){
+addAge(age);
+return new UsersGenerator(driver);
+}

@@ -44,5 +44,7 @@ public class Rozwiązanie {
             file.write('\n');
         }
         file.close();
+
+        driver.close();
     }
 }
