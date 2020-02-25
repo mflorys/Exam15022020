@@ -31,3 +31,8 @@ public class Rozwiazanie {
 
     }
 }
+
+/*
+OK!
+PS. Czy kaczka nie potrafi pływać i biegać? :)
+ */

@@ -4,18 +4,31 @@ Odpowiedzi na pytanie udziel bezpośrednio pod każdym pytaniem.
 
 1. Wymień najistotniejsze zastosowania Infrastruktury Klucza Publicznego (PKI) -  uwierzytelnianie i szyfrowanie,
 
+0.3p.
+
 2. W jaki sposób przechowywane są hasła w bezpiecznym systemie informatycznym?
+
+0p.
 
 3. Czym jest podpis elektroniczny? - uwierzytelnienie pochodzenia
 
+0.2p.
+
 4. Jak nazywa się lista Centrów Autoryzacji potwierdzających dany certyfikat? -- CA?
+
+0p. (ścieżka certyfikacji)
 
 5. Wymień 3 cechy funkcji skrótu.
 
+0p.
+
 6. Na czym polega atak typu SQL Injection?
+
+0p.
 
 7. Na czym polega atak typu XSS?
 
+0p.
 
 
 ----- Bazy danych -----
@@ -38,14 +51,19 @@ select distinct(country)
 from users
 group by country;
 
+1p.
+//group by jest redundantne
+
 9. Napisz zapytanie, które wyświetli użytkowników z krajów zaczynających się na literę "P" oraz z literą "r" na trzeciej pozycji.
 
 select * from country
 where country
 like "P%" and like "_r%"
 
-10. Napisz zapytanie, które wyświetli zamówienia złożone do końca 2019r. przez obywateli Niemiec oraz posortuj wyniki malejąco po liczbie sztuk.
+0p.
+Syntax error. Powinno być like 'P_r%'
 
+10. Napisz zapytanie, które wyświetli zamówienia złożone do końca 2019r. przez obywateli Niemiec oraz posortuj wyniki malejąco po liczbie sztuk.
 
 SELECT o.id, u.CustomerName, o.order_date
 FROM orders o
@@ -53,13 +71,15 @@ JOIN users u ON o.user_id=u.id;
 where o.order_date < 31.01.2019
 order by o.quantity desc
 
-
+1p.
 
 11. Wyświetl liczbę użytkowników z poszczególnych krajów o ile występuje więcej niż 10.
 
 select country, count(id) from users
 group by country
 having count(id) > 10
+
+1p.
 
 12. Wyświetl imiona i nazwiska zamawiających oraz ich zamówienia.
  Uwzględnij wszystkich użytkowników,
@@ -72,40 +92,46 @@ having count(id) > 10
  LEFT JOIN users u ON o.user_id=u.id;
  order by o.quantity desc
 
+ 1p.
+ //wyświetlono liczbę zamówień a nie zamówienia, ale najważniejsze było użycie LEFT JOIN
+
 13. Wyświetl imiona i nazwiska zamawiających oraz ich zamówienia.
 Jeśli użytkownik nie złożył zamówienia, nie wyświetlaj go.
 Jeśli zamówienie nie ma przypisanego użytkownika, również go nie wyświetlaj.
 
-
+0p.
 
 ----- Linux -----
 
 14. Podaj następujące komendy:
-a) wyświetlenie wszystkich plików w folderze, łącznie z ukrytymi
+a) wyświetlenie wszystkich plików w folderze, łącznie z ukrytymi - 1p.
 
 ls -a
 
-b) skopiuj zawartość file1 do file2 w folderze nadrzędnym
+b) skopiuj zawartość file1 do file2 w folderze nadrzędnym - 0p.
 
-c) zmień nazwę file1 na file2
+c) zmień nazwę file1 na file2 - 1p.
 
 mv file1 file2
 
-d) wyświetl wszystkie linijki z pliku zawierające wyraz "error"
+d) wyświetl wszystkie linijki z pliku zawierające wyraz "error" - 0p.
 
-e) wyświetl wszystkie procesy
+e) wyświetl wszystkie procesy - 1p.
 
 ps -A
 
-f) zabij proces o PID = 123
+f) zabij proces o PID = 123 - 1p.
 
 kill 123
 
-g) nadaj pełne uprawnienia do pliku file1 dla wszystkich
+g) nadaj pełne uprawnienia do pliku file1 dla wszystkich - 0p.
 
 sudo chmod a+rwx DirectoryName
 
-h) zaloguj się protokołem SSH na serwer 192.0.0.1 na użytkownika admin
+//chmod 777 file1
 
-15. Jak wyjść z edytora tekstu VI?
+h) zaloguj się protokołem SSH na serwer 192.0.0.1 na użytkownika admin - 0p.
+
+15. Jak wyjść z edytora tekstu VI? - 1p.
 ZZ lub :x
+//lub :q!

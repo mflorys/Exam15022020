@@ -15,3 +15,9 @@ public class Rozwiazanie {
         System.out.println(inneKolo.x + " " + inneKolo.y + " " + inneKolo.promien);
     }
 }
+
+/*
+
+OK
+
+ */

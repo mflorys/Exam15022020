@@ -27,6 +27,10 @@ public class Rozwiazanie {
     }
 }
 
+/*
 
+OK
+
+ */
 
 

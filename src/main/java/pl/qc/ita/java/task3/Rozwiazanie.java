@@ -31,3 +31,10 @@ public class Rozwiazanie {
     }
 }
 
+/*
+0,5p.
+
+Co jeśli użytkownik od razu wprowadzi wyraz "suma"?
+
+ */
+

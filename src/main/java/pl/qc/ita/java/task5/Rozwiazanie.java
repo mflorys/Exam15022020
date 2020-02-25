@@ -25,7 +25,15 @@ public class Rozwiazanie {
         System.out.println("parzyste" + even);
         System.out.println("nieparzyste" + (count - even));
     }
-
 }
+
+/*
+0p.
+
+Twój wynik dla 50111 to:
+parzyste0
+nieparzyste1
+
+ */
 
 

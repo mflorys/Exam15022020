@@ -22,3 +22,11 @@ public class Rozwiazanie {
 
     }
 }
+
+/*
+OK, ale nie doczytałeś ostatniego zdania w zadaniu.
+
+Chodziło o:
+Mezczyzna mezczyzna = new Mezczyzna(30, 183, new Kobieta(30, 165.0));
+mezczyzna.getZona().setMaz(mezczyzna);
+ */

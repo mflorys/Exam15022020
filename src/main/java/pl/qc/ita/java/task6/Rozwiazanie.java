@@ -60,3 +60,10 @@ public class Rozwiazanie {
         }
     }
 }
+
+/*
+0.8p.
+
+Nieczytelny kod. Nie wyświetlono przekształconek mapy.
+
+ */
