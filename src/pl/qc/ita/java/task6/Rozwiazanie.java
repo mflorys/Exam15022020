@@ -55,3 +55,31 @@ public class Rozwiazanie {
         }
     }
 }
+
+/*
+Rozwiązanie nieefektowne. Posiadasz już metode usunElementMapyPoValue(Map<String, String>, String).
+W zadaniu należało usunąć z mapy elementy, w których imiona są nieunikalne, a nie wyczyścić mapę i utworzyć od nowa.
+Wynik również nie jest ten sam - w mapie owszem pozostaną unikalne imiona, natomiast należało usunąć WSZYSTKIE elementy, w których imiona się powtarzają.
+W powyższym rozwiązaniu usunięte zostaną jedynie kolejne powtórzone imiona.
+
+Uwaga:
+Nie stosujemy poniższej konstrukcji.
+
+if (daneOsobowe.containsValue(imię)) {
+        } else {
+            daneOsobowe.put(nazwisko, imię);
+        }
+
+Zamiast tego piszemy:
+
+if (!daneOsobowe.containsValue(imię)) {
+        daneOsobowe.put(nazwisko, imię);
+        }
+
+W zadaniu, po utworzeniu mapy, należało:
+1. Wziąć pierwsze imię, przeiterować po kopii mapy w poszukiwaniu drugiego takiego samego imienia.
+2. Jeśli znaleźliśmy (wystarczył pierwszy duplikat), wywołać usunElementMapyPoValue(mapa, imie);
+W tej metodzie było już zaimplementowane iterowanie po kopii.
+
+
+*/

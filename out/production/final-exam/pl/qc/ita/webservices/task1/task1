@@ -1,0 +1,2 @@
+1) Wybierz 5 adresów URL z zadania selenium.task3
+2) Użyj biblioteki restassured by otworzyć każdy adres i sprwadź, czy nie jest zwracany kod odpowiedzi "404"

@@ -1,0 +1,12 @@
+1) Uruchom json-server i napisz test, który tworzy post o dowolnym tytule (title) i autorze (author).
+2) Sprawdź, czy zapisany obiekt faktycznie ma tytuł zgodny z tym, jaki ustawiłeś.
+
+Podpowiedź: użyj Mapy, żeby zapisać wartości obiektu i przekaż ją w parametrze (body).
+
+---------------------------
+jak uruchomić json server:
+json-server --watch db.json
+
+jesli nie masz go zainstalowanego:
+npm install -g json-server
+json-server --watch db.json

@@ -23,3 +23,12 @@ public class Rozwiazanie {
         //Twój kod
     }
 }
+
+/*
+1. brak implementacji
+2. OK
+3. Slimak nie posiada dodatkowego atrybutu
+
+Nie utworzono obiektów klas, nie wywołano metod.
+Brak odpowiedzi na pytanie (prawidłowa to "polimorfizm").
+ */

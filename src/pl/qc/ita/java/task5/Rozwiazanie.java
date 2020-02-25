@@ -24,3 +24,7 @@ public class Rozwiazanie {
         System.out.println("Parzyste: "+parzyste+" Nieparzyste: "+nieparzyste);
     }
 }
+
+/*
+OK
+ */

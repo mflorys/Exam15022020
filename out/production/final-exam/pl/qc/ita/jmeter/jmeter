@@ -1,0 +1,10 @@
+Stwórz test wydajnościowy w jMeter w oparciu o poniższy scenariusz:
+
+1) wejdź na stronę https://mailinator.com
+2) Zaloguj się na skrzynkę "Exam15022020"
+3) Sprawdź, czy istnieje mail o temacie "Exam15022020_temat"
+4) Jeśli tak, otwórz maila i sprawdź jego treść (powinna być zgodna z "Exam15022020_tresc")
+5) Jeśli treść jest inna, zaloguj błąd o teści "WTF"
+6) Upewnij się, że kody odpowiedzi są prawidłowe w każdym zapytaniu
+
+7) Wypisz linie jaką uruchomiłbyś test test.jmx w lokalizacji C:/jadaswiry/ z założeniem, że bieżący wynik Cie nie interesuje, a CSV z wynikami pośrednimi zapisujesz do jada.{tuPodajPrawidloweRozszerzenie}

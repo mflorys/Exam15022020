@@ -32,3 +32,8 @@ public class Rozwiazanie {
     }
 }
 
+/*
+
+Przy uzupełnianiu setu niepotrzebnie sprawdzasz za każdym razem jego długość. Pętla for byłaby tu bardziej wydajna.
+
+ */

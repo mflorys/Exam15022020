@@ -30,3 +30,9 @@ public class Rozwiazanie {
 
     }
 }
+
+/*
+OK
+
+toLowerCase i trim lepiej wykonać w warunku dla przejrzystości kodu.
+ */

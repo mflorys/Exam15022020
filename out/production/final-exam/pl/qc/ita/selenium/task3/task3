@@ -1,0 +1,5 @@
+Wejdź na stronę pracuj.pl
+a) napisz asercję, czy adres strony zawiera "pl"
+b) napisz asercję, czy strona zawiera element: <span class="footerBR_Z5r">Nasz profil na Facebooku</span>. Wykorzystaj xpath.
+c) wypisz na terminalu wszystkie adresy URL zawierające słowo "pracuj". Zapisz te adresy - przydadzą się do następnych zadań.
+d) zapisz adresy z punktu c) do pliku tekstowego.

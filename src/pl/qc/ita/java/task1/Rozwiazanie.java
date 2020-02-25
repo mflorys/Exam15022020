@@ -19,3 +19,8 @@ Mężczyzna Franek = new Mężczyzna(20,170,Frania);
 
     }
 }
+
+/*
+Brak klas Kobieta i Mezczyzna (a co za tym idzie - atrybutów, konstruktora).
+Frania w tym rozwiązaniu nie posiada męża.
+ */
